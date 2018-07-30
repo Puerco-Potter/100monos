@@ -1,0 +1,26 @@
+@import '~bootstrap/scss/bootstrap';
+$acceVerde: #84a640;
+$acceAzul: #396696;
+$colormarca : green;
+
+h1 {
+    color: $colormarca;
+    font-weight: bold;
+}
+
+.marca {
+	color:$colormarca;
+}
+
+.navbar .navbar-brand {
+    color: $colormarca;
+    font-weight: bold;
+}
+
+html, body, .container {
+    height: 100%;
+}
+
+.pantalla {
+    height:100%;
+}

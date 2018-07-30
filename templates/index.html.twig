@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}100Monos{% endblock %}</title>
+        {% block stylesheets %}
+        <link rel="stylesheet" href="{{ asset('build/app.css') }}">
+        {% endblock %}
+    </head>
+    <body>
+    	<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+		  <a class="navbar-brand" href="#">100Monos</a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		    <ul class="navbar-nav mr-auto">
+		      <li class="nav-item active">
+		        <a class="nav-link" href="#Nosotros">Nosotros<span class="sr-only">(current)</span></a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#Publicitarias">Paginas Publicitarias</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#Institucionales">Paginas Institucionales</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#Contacto">Paginas De Contacto</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#Tiendas">Tiendas</a>
+		      </li>
+		    </ul>
+		  </div>
+		</nav>
+		
+		<div class="container">
+        {% block body %}
+        <div id="Nosotros" class="pantalla d-flex align-items-center">
+        	<div class="contenido">
+        		<h1>100Monos</h1>
+        		<h3>Nuestra Web es mala porque pasamos todo el tiempo haciendo la suya</h3>
+        	</div>
+        </div>
+        <div id="Publicitarias" class="pantalla d-flex align-items-center">
+        	<div class="contenido">
+	        	<h1>Paginas Publicitarias</h1>
+	        	<h3>Otra cosa</h3>
+        	</div>
+        </div>
+        <div id="Institucionales" class="pantalla d-flex align-items-center">
+        	<div class="contenido">
+	        	<h1>Paginas Institucionales</h1>
+	        	<h3>Otra cosa</h3>
+        	</div>
+        </div>
+        <div id="Contacto" class="pantalla d-flex align-items-center">
+        	<div class="contenido">
+	        	<h1>Paginas De Contacto</h1>
+	        	<h3>Otra cosa</h3>
+        	</div>
+        </div>
+        <div id="Tiendas" class="pantalla d-flex align-items-center">
+        	<div class="contenido">
+	        	<h1>Tiendas</h1>
+	        	<h3>Otra cosa</h3>
+        	</div>
+        </div>
+        
+        {% endblock %}
+        {% block javascripts %}
+          <script src="{{ asset('build/app.js') }}"></script>
+        {% endblock %}
+        </div>
+    </body>
+</html>
