@@ -24,3 +24,29 @@ html, body, .container {
 .pantalla {
     height:100%;
 }
+
+.fondoNosotros {
+	background-image: url("images/1.jpg");
+}
+
+.fondoPublicitarias{
+	background-image: url("images/2.jpg");
+}
+.fondoInstitucionales{
+	background-image: url("images/3.jpg");
+}
+.fondoContacto{
+	background-image: url("images/4.jpg");
+}
+.fondoTiendas{
+	background-image: url("images/5.jpg");
+}
+
+.parallax {
+ 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

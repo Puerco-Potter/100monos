@@ -4,9 +4,9 @@ Encore
     // the project directory where compiled assets will be stored
     .setOutputPath('public/build/')
     // the public path used by the web server to access the previous directory
-    .setPublicPath('build')
+    .setPublicPath('./')
     // the public path you will use in Symfony's asset() function - e.g. asset('build/some_file.js')
-    .setManifestKeyPrefix('build/')
+    .setManifestKeyPrefix('webpack/')
 
     .cleanupOutputBeforeBuild()
     .enableSourceMaps(!Encore.isProduction())
