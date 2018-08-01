@@ -1,4 +1,5 @@
 @import '~bootstrap/scss/bootstrap';
+@import '../AnimateIt/css/animations.css';
 $acceVerde: #84a640;
 $acceAzul: #396696;
 $colormarca : green;
@@ -49,14 +50,4 @@ html, body, .container {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-.contenido {
-	opacity: 0;
-	animation: letras 2s ease-in-out 1s 1 forwards;
-}
-
-@keyframes letras {
-	0%   { opacity: 0; }
-  100% { opacity: 1; }
 }
